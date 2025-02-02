@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(45deg, #f8e5b1, #fff7e6);
+    color: #b88e0d;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #b88e0d;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-top: 5px solid #b88e0d;
+    border-bottom: 5px solid #b88e0d;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #b88e0d;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-out;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #b88e0d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+}
+
+footer p {
+    animation: fadeIn 2s ease-out;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #b88e0d;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
